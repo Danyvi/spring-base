@@ -2,7 +2,7 @@ package xyz.codeandlearn;
 
 public class Developer {
 
-//    private Laptop laptop;
+    private Laptop laptop;
     private int age;
 
 //    public Developer(Laptop laptop) {
@@ -27,7 +27,14 @@ public class Developer {
         return age;
     }
 
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
+
+
     public void buildSoftware() {
+        laptop.compile();
         System.out.println("I am a developer and I am building software");
     }
 }
