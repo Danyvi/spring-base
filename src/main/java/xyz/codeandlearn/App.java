@@ -8,7 +8,10 @@ public class App {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-//        Developer developer = context.getBean(Developer.class);
-//        developer.buildSoftware();
+        Developer developer = context.getBean(Developer.class);
+
+//        developer.setAge(30);
+        System.out.println("Developer age is: " + developer.getAge());
+        developer.buildSoftware();
     }
 }

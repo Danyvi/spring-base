@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 >
-    <bean id="developer" class="xyz.codeandlearn.Developer" />
+    <bean id="developer" class="xyz.codeandlearn.Developer">
+        <property name="age" value="25" />
+    </bean>
     <bean id="laptop" class="xyz.codeandlearn.Laptop" />
 </beans>
