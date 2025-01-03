@@ -10,6 +10,15 @@ public class Developer {
 //        System.out.println("Developer constructor is called");
 //    }
 
+    public Developer() {
+        System.out.println("Developer constructor is called");
+    }
+
+    public Developer(int age) {
+        this.age = age;
+        System.out.println("Developer constructor is called");
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
