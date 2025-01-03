@@ -6,10 +6,11 @@
     <bean id="developer" class="xyz.codeandlearn.Developer">
         <!-- Setter Injection -->
 <!--        <property name="age" value="25" /> -->
-        <property name="laptop" ref="laptop1"/>
+<!--        <property name="laptop" ref="laptop1"/>-->
 
         <!-- Constructor Injection -->
-        <constructor-arg name="age" value="25" />
+<!--        <constructor-arg name="age" value="25" />-->
+        <constructor-arg name="laptop" ref="laptop1" />
     </bean>
     <bean id="laptop1" class="xyz.codeandlearn.Laptop" />
 </beans>

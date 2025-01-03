@@ -3,29 +3,32 @@ package xyz.codeandlearn;
 public class Developer {
 
     private Laptop laptop;
-    private int age;
+//    private int age;
 
-//    public Developer(Laptop laptop) {
-//        this.laptop = laptop;
-//        System.out.println("Developer constructor is called");
-//    }
+
 
     public Developer() {
         System.out.println("Developer constructor is called");
     }
 
-    public Developer(int age) {
-        this.age = age;
+    public Developer(Laptop laptop) {
+        this.laptop = laptop;
         System.out.println("Developer constructor is called");
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+//    public Developer(int age) {
+//        this.age = age;
+//        System.out.println("Developer constructor is called");
+//    }
 
-    public int getAge() {
-        return age;
-    }
+
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
+
+//    public int getAge() {
+//        return age;
+//    }
 
     public void setLaptop(Laptop laptop) {
         this.laptop = laptop;

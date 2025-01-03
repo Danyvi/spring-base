@@ -11,7 +11,7 @@ public class App {
         Developer developer = context.getBean(Developer.class);
 
 //        developer.setAge(30);
-        System.out.println("Developer age is: " + developer.getAge());
+//        System.out.println("Developer age is: " + developer.getAge());
         developer.buildSoftware();
     }
 }
