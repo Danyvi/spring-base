@@ -8,7 +8,7 @@ public class App {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Developer developer = context.getBean(Developer.class);
-        developer.buildSoftware();
+//        Developer developer = context.getBean(Developer.class);
+//        developer.buildSoftware();
     }
 }
