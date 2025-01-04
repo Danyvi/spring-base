@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 >
-    <bean id="developer" class="xyz.codeandlearn.Developer">
-        <property name="computer" ref="laptop1" />
+    <bean id="developer" class="xyz.codeandlearn.Developer" autowire="byType">
+<!--        <property name="computer" ref="laptop1" />-->
     </bean>
 
-    <bean id="laptop1" class="xyz.codeandlearn.Laptop" />
+    <bean id="computer" class="xyz.codeandlearn.Laptop" primary="true"/>
 
     <bean id="desktop1" class="xyz.codeandlearn.Desktop" />
 </beans>
