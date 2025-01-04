@@ -1,10 +1,10 @@
 package xyz.codeandlearn;
 
-public class Laptop {
+public class Laptop implements Computer {
     public Laptop() {
         System.out.println("Laptop constructor is called");
     }
     public void compile() {
-        System.out.println("Compiling...");
+        System.out.println("Laptop Compiling...");
     }
 }
